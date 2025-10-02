@@ -47,7 +47,7 @@ SELECT
 FROM category_tree ct
 LEFT JOIN categories child ON child.parent_id = ct.category_id
 WHERE ct.level = 0  -- Только категории первого уровня
-   OR ct.parent_id IS NOT NULL  -- Или все остальные (для демонстрации)
+   OR ct.parent_id IS NOT NULL  -- Или все остальные
 GROUP BY ct.category_id, ct.name
 ORDER BY ct.category_id;
 /*select 
