@@ -6,7 +6,7 @@
 - `products` - номенклатура товаров  
 - `clients` - покупатели
 - `orders` - заказы
-- `order_items` - состав заказов (связь many-to-many между orders и products)
+- `order_products` - связующая таблица (из-за связи многие ко многим между products и orders)
 
 ## Как запустить
 
